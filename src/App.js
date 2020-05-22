@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import LocalizedStrings from 'react-localization';
 // import { data } from './langaugeData';
 
-
 let strings = new LocalizedStrings({
   en:{
     how:"How do you want your egg today?",
@@ -45,7 +44,7 @@ class App extends Component {
           <option value="it">It- Italian</option>
         </select>
         <br /><br />
-        <p>{strings.how}</p>
+        <p>{strings.boiledEgg}</p>
       </div>
     )
   }
