@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import LocalizedStrings from 'react-localization';
+import { FormattedMessage } from 'react-intl';
 // import { data } from './langaugeData';
 
 let strings = new LocalizedStrings({
@@ -45,6 +46,7 @@ class App extends Component {
         </select>
         <br /><br />
         <p>{strings.boiledEgg}</p>
+        <FormattedMessage id="greeting"/>
       </div>
     )
   }
